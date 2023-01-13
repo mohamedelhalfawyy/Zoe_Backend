@@ -1,10 +1,8 @@
-const { createLogger, transports, format } = require('winston');require('winston-mongodb');
+const { createLogger, transports, format } = require('winston');
 require('express-async-errors');
-const config = require('config');
 
 
 module.exports = function () {
-    const db = config.get('db');
 
     createLogger({
         transports: [
