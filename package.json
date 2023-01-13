@@ -1,12 +1,16 @@
 {
   "name": "zoe",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "seed": "node seed.js",
     "test": "jest --watchAll"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "config": "^3.3.8",
