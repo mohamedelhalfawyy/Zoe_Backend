@@ -9,10 +9,6 @@ module.exports = function () {
     createLogger({
         transports: [
             new transports.File({ filename: 'logfile.log' }),
-            new transports.MongoDB({
-                db: db,
-                level: 'info'
-            }),
         ],
         exceptionHandlers: [
             new transports.Console({
