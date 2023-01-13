@@ -1,12 +1,16 @@
 const { createLogger, transports, format } = require('winston');require('winston-mongodb');
 require('express-async-errors');
+const config = require('config');
+
 
 module.exports = function () {
+    const db = config.get('db');
+
     createLogger({
         transports: [
             new transports.File({ filename: 'logfile.log' }),
             new transports.MongoDB({
-                db: 'mongodb://127.0.0.1:27017/zoe',
+                db: db,
                 level: 'info'
             }),
         ],
