@@ -8,6 +8,9 @@
     "seed": "node seed.js",
     "test": "jest --watchAll"
   },
+  "engines": {
+    "node": "18.2.0"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
