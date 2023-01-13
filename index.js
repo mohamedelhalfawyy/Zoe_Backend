@@ -1,4 +1,5 @@
 const express = require('express');
+const config = require("config");
 const app = express();
 
 require('./Startup/logging')();
@@ -8,5 +9,7 @@ require('./Startup/db')();
 require('./Startup/config')();
 require('./Startup/validation')();
 
-const port = process.env.PORT || 3900;
-app.listen(port, () => console.log(`I am listening on port ${port}...`));
+const port = process.env.PORT || config.get("port");
+const server = app.listen(port, () => console.log(`I am listening on port ${port}...`));
+
+module.exports = server;
