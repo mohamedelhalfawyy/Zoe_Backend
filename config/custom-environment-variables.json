@@ -1,3 +1,4 @@
 {
-  "jwtPrivateKey": "zoe_jwtPrivateKey"
+  "jwtPrivateKey": "zoe_jwtPrivateKey",
+  "db": "zoe_db"
 }
