@@ -3,7 +3,10 @@ const config = require("config");
 const app = express();
 
 require('./Startup/logging')();
-require("./startup/cors")(app);
+/*
+! uncomment the next line if you want to test local!
+* */
+// require("./startup/cors")(app);
 require('./Startup/routes')(app);
 require('./Startup/db')();
 require('./Startup/config')();
