@@ -3,14 +3,19 @@
   "builds": [{ "src": "index.js", "use": "@now/node-server" }],
   "routes": [
     {
-      "src": "/movies",
+      "src": "/api/movies",
       "dest": "/index.js",
       "methods": ["GET"]
     },
     {
-      "src": "/movies",
+      "src": "/api/users",
       "dest": "/index.js",
       "methods": ["POST"]
+    },
+    {
+      "src": "/api/users",
+      "dest": "/index.js",
+      "methods": ["GET"]
     }
   ]
 }
