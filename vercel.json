@@ -16,6 +16,31 @@
       "src": "/api/users",
       "dest": "/index.js",
       "methods": ["GET"]
+    },
+    {
+      "src": "/api/auth",
+      "dest": "/index.js",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/api/genres",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/api/genres",
+      "dest": "/index.js",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/api/genres",
+      "dest": "/index.js",
+      "methods": ["PUT"]
+    },
+    {
+      "src": "/api/genres",
+      "dest": "/index.js",
+      "methods": ["DELETE"]
     }
   ]
 }
